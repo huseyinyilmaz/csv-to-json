@@ -1,0 +1,74 @@
+# This YAML file describes your package. Stack will automatically generate a
+# Cabal file when you run `stack build`. See the hpack website for help with
+# this file: <https://github.com/sol/hpack>.
+benchmarks:
+  exchange-benchmarks:
+    dependencies:
+    - base
+    - foundation
+    - exchange
+    - criterion
+    ghc-options:
+    - -rtsopts
+    - -threaded
+    - -with-rtsopts=-N
+    main: Main.hs
+    source-dirs: benchmark
+category: File
+description: exchange is a new Haskeleton package.
+executables:
+  exchange:
+    dependencies:
+    - base
+    - foundation
+    - exchange
+    ghc-options:
+    - -rtsopts
+    - -threaded
+    - -with-rtsopts=-N
+    main: Main.hs
+    source-dirs: executable
+extra-source-files:
+- CHANGELOG.md
+- LICENSE.md
+- package.yaml
+- README.md
+- stack.yaml
+default-extensions:
+- DataKinds
+- DeriveDataTypeable
+- DeriveGeneric
+- DuplicateRecordFields
+- FlexibleInstances
+- GeneralizedNewtypeDeriving
+- OverloadedStrings
+- ScopedTypeVariables
+- TemplateHaskell
+- TypeOperators
+- NoImplicitPrelude
+ghc-options: -Wall
+github: huseyinyilmaz/exchange
+library:
+  dependencies:
+  - base
+  - foundation
+  source-dirs: library
+license: MIT
+maintainer: Huseyin Yilmaz
+name: exchange
+synopsis: Command line format converter.
+tests:
+  exchange-test-suite:
+    dependencies:
+    - base
+    - foundation
+    - exchange
+    - tasty
+    - tasty-hspec
+    ghc-options:
+    - -rtsopts
+    - -threaded
+    - -with-rtsopts=-N
+    main: Main.hs
+    source-dirs: test-suite
+version: '0.0.0.1'
