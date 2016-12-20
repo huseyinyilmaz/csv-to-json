@@ -1,4 +1,3 @@
-import Foundation
 import qualified Exchange
 
 main :: IO ()
