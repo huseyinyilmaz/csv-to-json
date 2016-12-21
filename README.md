@@ -1,4 +1,4 @@
-# [exchange][]
+# [sv-to-json][]
 
 Thanks for starting a project with Haskeleton! If you haven't heard of it
 before, I suggest reading the introductory blog post. You can find it here:
@@ -45,4 +45,4 @@ stack haddock
 
 Thanks again, and happy hacking!
 
-[exchange]: https://github.com/githubuser/exchange
+[sv-to-json]: https://github.com/huseyinyilmaz/sv-to-json

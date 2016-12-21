@@ -1,7 +1,7 @@
 # Change log
 
-exchange uses [Semantic Versioning][].
+sv-to-json uses [Semantic Versioning][].
 The change log is available through the [releases on GitHub][].
 
 [Semantic Versioning]: http://semver.org/spec/v2.0.0.html
-[releases on GitHub]: https://github.com/githubuser/exchange/releases
+[releases on GitHub]: https://github.com/huseyinyilmaz/csv-to-json/releases

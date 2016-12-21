@@ -3,7 +3,6 @@
 # this file: <https://github.com/sol/hpack>.
 dependencies:
 - base
-- foundation
 - bytestring
 - cassava
 - aeson
@@ -18,9 +17,9 @@ dependencies:
 - unordered-containers
 - turtle
 benchmarks:
-  exchange-benchmarks:
+  sv-to-json-benchmarks:
     dependencies:
-    - exchange
+    - sv-to-json
     - criterion
     ghc-options:
     - -rtsopts
@@ -29,11 +28,11 @@ benchmarks:
     main: Main.hs
     source-dirs: benchmark
 category: File
-description: exchange is a new Haskeleton package.
+description: sv-to-json is a new Haskeleton package.
 executables:
-  exchange:
+  sv-to-json:
     dependencies:
-    - exchange
+    - sv-to-json
     ghc-options:
     - -rtsopts
     - -threaded
@@ -58,19 +57,18 @@ default-extensions:
 - TemplateHaskell
 - TypeOperators
 ghc-options: -Wall
-github: huseyinyilmaz/exchange
+github: huseyinyilmaz/sv-to-json
 library:
   source-dirs: library
 license: MIT
 maintainer: Huseyin Yilmaz
-name: exchange
+name: sv-to-json
 synopsis: Command line format converter.
 tests:
-  exchange-test-suite:
+  sv-to-json-test-suite:
     dependencies:
     - base
-    - foundation
-    - exchange
+    - sv-to-json
     - tasty
     - tasty-hspec
     ghc-options:
