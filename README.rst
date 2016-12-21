@@ -34,6 +34,7 @@ Build the project:
 Run the test suite:
 
 ::
+
    stack test
 
 Run the benchmarks:
