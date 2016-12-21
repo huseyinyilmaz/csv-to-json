@@ -50,8 +50,8 @@ Generate documentation:
    stack haddock
 
 
-Here is a small test I did to see the performance of tool. (Done on my laptop)
-TODO: Run the same test while laptop connected to a power source.
+Here is a small test I did to see the performance of tool. (Command was ran on macbook pro laptop.)
+
 
 ::
 
@@ -61,8 +61,8 @@ TODO: Run the same test while laptop connected to a power source.
     1000000 data.csv
    $ time csv-to-json -i data.csv -o data.json
 
-   real	0m50.869s
-   user	1m23.033s
-   sys	0m35.982s
+   real	0m47.367s
+   user	1m21.392s
+   sys	0m30.604s
    $ ls -alh data.json
    -rw-r--r--  1 huseyinyilmaz  staff   1.4G Dec 20 20:10 data.json
