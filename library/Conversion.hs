@@ -21,7 +21,11 @@ toJSON :: V.Vector Text.Text ->  Proxy () (V.Vector Text.Text) () Text.Text IO (
 toJSON headers = forever $ do
   vals <- await
   let res = Aeson.Object $ HM.fromList (V.toList $ V.zip headers (V.map Aeson.String vals))
-  (yield . addNewLine . LazyText.toStrict . Encoding.decodeUtf8 . Aeson.encode) res
+  (yield .
+   addNewLine .
+   LazyText.toStrict .
+   Encoding.decodeUtf8 .
+   Aeson.encode) res
 
 copyFiles :: FilePath -> FilePath -> IO ()
 copyFiles inFile outFile =
