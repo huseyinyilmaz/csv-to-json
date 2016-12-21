@@ -1,5 +1,5 @@
-SV TO JSON
-##########
+CSV-TO-JSON
+===========
 
 Command line tool that converts csv files into json files in constant space.
 
