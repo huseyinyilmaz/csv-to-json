@@ -17,9 +17,9 @@ dependencies:
 - unordered-containers
 - turtle
 benchmarks:
-  sv-to-json-benchmarks:
+  csv-to-json-benchmarks:
     dependencies:
-    - sv-to-json
+    - csv-to-json
     - criterion
     ghc-options:
     - -rtsopts
@@ -28,11 +28,11 @@ benchmarks:
     main: Main.hs
     source-dirs: benchmark
 category: File
-description: sv-to-json is a new Haskeleton package.
+description: csv-to-json is a new Haskeleton package.
 executables:
-  sv-to-json:
+  csv-to-json:
     dependencies:
-    - sv-to-json
+    - csv-to-json
     ghc-options:
     - -rtsopts
     - -threaded
@@ -57,18 +57,18 @@ default-extensions:
 - TemplateHaskell
 - TypeOperators
 ghc-options: -Wall
-github: huseyinyilmaz/sv-to-json
+github: huseyinyilmaz/csv-to-json
 library:
   source-dirs: library
 license: MIT
 maintainer: Huseyin Yilmaz
-name: sv-to-json
+name: csv-to-json
 synopsis: Command line format converter.
 tests:
-  sv-to-json-test-suite:
+  csv-to-json-test-suite:
     dependencies:
     - base
-    - sv-to-json
+    - csv-to-json
     - tasty
     - tasty-hspec
     ghc-options:
